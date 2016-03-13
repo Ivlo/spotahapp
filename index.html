@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Angular App</title>
+  <link href='https://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<header>
+  <div class="wrapper">
+    <a href="#" class="logo">
+      SPOT<strong>A</strong>ROOM
+      <span class="logo_claim">The best way to find your home</span>
+    </a>
+    <nav class="main_nav">
+      <ul>
+        <li><a href="#/">The company</a></li>
+        <li><a href="#/">How we work</a></li>
+        <li><a href="#/">Contact us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="main_content home_page">
+  <div class="wrapper" ng-view></div>
+</div>
+
+<!-- Vendor libraries -->
+<script type="text/javascript" src="vendor/angular/angular.js"></script>
+<script type="text/javascript" src="vendor/angular-resource/angular-resource.js"></script>
+<script type="text/javascript" src="vendor/angular-route/angular-route.js"> </script>
+<!-- Application Files -->
+<script src="js/app.js"></script>
+<script src="js/controllers/MainCtrl.js"></script>
+<script src="js/factories/MyDataFactory.js"></script>
+</body>
+</html>

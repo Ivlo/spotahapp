@@ -1,0 +1,68 @@
+@media (max-width: 736px) {
+  .col {
+    float:none;
+  }
+  .col_1,
+  .col_3 {
+    width:100%;
+  }
+
+  .m_filter {
+    margin:0 10px;
+  }
+
+  .logo {
+    display:block;
+    margin:20px auto;
+  }
+
+  .main_nav {
+    float:none;
+    margin:0 auto;
+
+    ul {
+      text-align:center;
+    }
+  }
+
+  .m_filter {
+    padding:10px;
+  }
+
+  .m_item {
+    margin:10px;
+    padding:10px;
+    display:block;
+  }
+
+  .m_item_header {
+    display:block;
+    width:100%;
+    margin-bottom:10px;
+  }
+
+  .m_item_content {
+    display:block;
+    width:100%;
+    padding-left:0;
+  }
+
+  .m_item_content_price {
+    font-size:18px;
+  }
+
+  .m_item_content_description {
+    font-size:16px;
+    width:100%;
+  }
+
+  .m_item_content_actions {
+    margin-bottom:5px;
+    text-align:center;
+  }
+
+  .button {
+    min-width:100px;
+  }
+
+}

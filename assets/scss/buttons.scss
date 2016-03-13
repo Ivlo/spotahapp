@@ -1,0 +1,25 @@
+.button {
+  display:inline-block;
+  min-width:140px;
+  margin-left:8px;
+  padding:10px;
+  text-align:center;
+  color:#fff;
+  font-size:15px;
+  opacity:1;
+  transition:opacity 0.3s ease-in-out;
+
+  &:hover {
+    opacity:.6;
+  }
+}
+
+.button_primary {
+  background-color:#418E37;
+  box-shadow: inset 0px -4px 0px 0px #176B27;
+}
+
+.button_secondary {
+  background-color:#F0932E;
+  box-shadow: inset 0px -4px 0px 0px #B0651E;
+}

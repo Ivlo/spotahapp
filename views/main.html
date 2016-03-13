@@ -1,0 +1,46 @@
+<aside class="col col_1">
+  <form action="" class="m_filter">
+    <fieldset>
+      <legend>Filters</legend>
+      <div class="m_filter_container">
+        <label for="property_type" class="m_filter_title">Property type</label>
+        <select name="property_type" id="property_type" ng-model="searchparam.type">
+          <option value="">All</option>
+          <option value="room_shared">room_shared</option>
+          <option value="apartment">apartment</option>
+        </select>
+      </div>
+
+      <div class="m_filter_container">
+        <strong class="m_filter_title">Sort by price</strong>
+        <a href="" ng-click="setSort('+pricePerMonth')" class="m_filter_link">Ascendente</a>
+        <a href="" ng-click="setSort('-pricePerMonth')" class="m_filter_link">Descendete</a>
+      </div>
+
+
+
+
+
+    </fieldset>
+  </form>
+</aside>
+
+<div class="col col_3">
+  <ul>
+    <li ng-repeat="homecard in homecards | filter: searchparam | orderBy: sort" >
+        <article class="m_item" ng-class="{'even':$even,'odd':$odd}">
+          <div class="m_item_header">
+            <a href=""><img src="{{homecard.mainPhotoUrl}}"></a>
+          </div>
+          <div class="m_item_content">
+            <p class="m_item_content_description">{{homecard.title}}</p>
+            <p class="m_item_content_price">{{homecard.pricePerMonth}} {{homecard.currencySymbol}}</p>
+            <div class="m_item_content_actions">
+              <a href="" class="button button_secondary">More details</a>
+              <a href="" class="button button_primary">Book now!</a>
+            </div>
+          </div>
+        </article>
+    </li>
+  </ul>
+</div>

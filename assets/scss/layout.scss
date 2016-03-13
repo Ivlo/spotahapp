@@ -1,0 +1,84 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+header {
+  margin-bottom:20px;
+}
+
+.logo {
+  display:inline-block;
+  width:254px;
+  margin:20px;
+  font-family: 'Luckiest Guy', cursive;
+  font-size:40px;
+  color:#000;
+  line-height:normal;
+  letter-spacing:2px;
+
+  strong {
+    position:relative;
+    z-index:1;
+    margin-left:5px;
+    margin-right:8px;
+    font-weight:normal;
+
+    &:before {
+      content:'';
+      position:absolute;
+      z-index:-1;
+      display:inline-block;
+      width:40px;
+      height:40px;
+      margin-top:-5px;
+      margin-left:-7px;
+      background-color:#FCD02F;
+      border-radius:50%;
+    }
+
+  }
+}
+
+.logo_claim {
+  display:block;
+  font-family:'Open Sans';
+  font-size:10px;
+  letter-spacing:0;
+  text-align:right;
+  line-height:2px;
+}
+
+.wrapper {
+  max-width:1200px;
+  margin:0 auto;
+  overflow:hidden;
+}
+
+.main_nav {
+  float:right;
+  margin-top:30px;
+  font-size:14px;
+  font-weight:600;
+
+  li {
+    display:inline-block;
+    margin:0 5px;
+  }
+
+  a {
+    color:#000;
+  }
+}
+
+.col {
+  float:left;
+}
+
+.col_3 {
+  width: 75%;
+}
+
+.col_1 {
+  width: 25%;
+}
